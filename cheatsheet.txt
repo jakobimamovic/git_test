@@ -1,0 +1,34 @@
+Commands related to a remote repository:
+    git clone git@github.com:USER-NAME/REPOSITORY-NAME.git
+    git push or git push origin main (Both accomplish the same goal in this context)
+
+Commands related to the workflow:
+    git add .
+    git commit -m "A message describing what you have done to make this snapshot different"
+Commands related to checking status or log history
+    git status
+    git log
+The basic Git syntax is program | action | destination.
+
+For example,
+
+    git add . is read as git | add | ., where the period represents everything in the current directory;
+    git commit -m "message" is read as git | commit -m | "message"; and
+    git status is read as git | status | (no destination).
+
+Starting a new repository:
+    1. Make a new repository on github and add a README file
+    2. Connect the repository with the help of SSH key and clone/copy the repository onto your local machine
+    NOTE: You MUST click the SSH option to get the correct URL.
+    3. mkdir <name of your directory that will contain your repository>
+    4. Move to the folder via terminal
+    5. terminal Commands:
+        - git clone <copied link from github>
+        - check if it's working with git remote -v
+USE THE GIT WORKFLOW:
+    touch <name.extension> --> creates a new file with the extension that you want
+    git status --> checks what's happening with your files at that time
+    git add <name.extension> --> moves the file into staging area
+    git commit -m --> commits the file that was in staging area and creates a snapshot of it
+    git push origin main / git push --> uploads the commitments onto github
+    git log --> checks what's been happening to the files
